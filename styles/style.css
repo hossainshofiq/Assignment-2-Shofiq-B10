@@ -1,14 +1,467 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-.inter-normal> {
-    font-family: "Inter", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-  @font-face {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@font-face {
     font-family: 'Miama';
     src: url(../fonts/Miama.ttf);
-  }
+}
+body{
+    font-family: "Inter", sans-serif;
+    background: rgb(0, 0, 0);
+    /* max-width: 73%; */
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+
+.hide{
+    display: none;
+}
+/* shared styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+.width-container{
+    width: 70.61%;
+    margin: 0 auto;
+}
+.orange-color{
+    color: #E6533C;
+}
+.white-color{
+    color: #FFFFFF;
+}
+.dark-gray-color{
+    color: rgba(255, 255, 255, 0.5);
+}
+.regular-14{
+    font-size: 0.87rem;
+    font-weight: 400;
+}
+.semi-bold-18{
+    font-size: 1.12rem;
+    font-weight: 600;
+}
+.black-48{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.black-20{
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+/*  */
+
+/* header section */
+.brand-name{
+    font-size: 2.25rem;
+    font-weight: 800;
+    font-style: italic;
+}
+.nav-items{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    width: 465px; 
+    height: 46px;
+    font-size: 1.12rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 47px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.home-btn{
+    border-style: none;
+    border-radius: 46px;
+    background-color: #E6533C;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    font-size: 1.12rem;
+    font-weight: 600;
+}
+nav a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.about {
+    padding: 8px 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 55px;
+}
+.menu{
+    display: none;
+}
+.banner-title{
+    font-size: 4.88rem;
+    font-weight: 900;
+    padding-bottom: 28px;
+    line-height: 95%;
+}
+.shape-txt {
+    font-family: 'Miama';
+    font-weight: 400;
+    font-size: 7rem;
+    font-style: italic;
+}
+.banner-title-description{
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 28px;
+}
+.banner a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.join-club-btn{
+    border-style: none;
+    border-radius: 42px;
+    background-color: #E6533C;
+    color: #FFFFFF;
+    padding: 16px 45px;
+    font-size: 1.12rem;
+    font-weight: 600;
+}
+.club{
+    display: none;
+}
+.download-btn{
+    border: 1px solid #FFFFFF;
+    border-radius: 42px;
+    background-color: transparent;
+    color: #FFFFFF;
+    padding: 16px 48px;
+    font-size: 1.12rem;
+    font-weight: 600;
+}
+.banner-btn{
+    display: flex;
+    gap: 14px;
+}
+.banner{
+    /* margin-top: 96px;
+    padding-bottom: 76px; */
+}
+.banner-image{
+    position: relative;
+    width: 100%;
+    width: 349px;
+    height: 580px;
+}
+.tp-box-1{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    width: 206px;
+    height: 96px;
+    background-color: rgba(48, 48, 48, 0.54);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 71%;
+    right: 70%;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #E6533C;
+}
+.tp-box-1 h3{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: rgba(250, 250, 249, 1);
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+.tp-box-1 p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(239, 237, 232, 0.65);
+    padding-bottom: 20px;
+}
+.tp-box-2{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    width: 193px;
+    height: 98px;
+    background-color: rgba(48, 48, 48, 0.54);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+}
+.tp-box-2 h3{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #FFFFFF;
+    padding-top: 17px;
+    padding-bottom: 5px;
+}
+.tp-box-2 p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    padding-bottom: 16px;
+}
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 167px;
+}
+
+/* main */
+/* change habit section */
+.habit-section{
+    margin-top: 100px;
+    text-align: center;
+}
+.habit-title-header{
+    padding-bottom: 14px;
+}
+.habit-title-p{
+    margin-bottom: 58px;
+}
+.img-style{
+    width: 180px;
+    height: 180px;
+    border: 2px solid rgba(255, 255, 255, 0.10);
+    border-radius: 100%;
+}
+.card-title{
+    padding-top: 30px;
+    padding-bottom: 6px;
+}
+.habit-card{
+    width: 231px;
+}
+.habit-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* run section */
+.run-section{
+    border-radius: 18px;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.run-easily{
+    padding: 40px 165px 40px 55px;
+}
+.run-title{
+    padding-bottom: 14px;
+}
+.run-title-p{
+    width: 443px;
+    padding-bottom: 34px;
+}
+.join-now-btn{
+    border-style: none;
+    border-radius: 46px;
+    background-color: #E6533C;
+    color: #FFFFFF;
+    font-size: 1.12rem;
+    font-weight: 600;
+    padding: 16px 72px;
+}
+.run-section a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.run-img{
+    padding: 30px 32px 30px 0px;
+    width: 100%;
+}
+.run-img img{
+    max-width: 100%;
+    border-radius: 18px;
+    object-fit: none;
+    object-position: 70% 28%;
+}
+
+/* bmi calculator */
+.bmi-container{
+    margin-bottom: 88px;
+}
+.bmi-header{
+    margin-left: 384px;
+    margin-right: 384px;
+}
+.bmi-title{
+    width: 353px;
+    padding-bottom: 14px;
+}
+.bmi-title-p{
+    width: 671px;
+}
+
+/* team section */
+.team-intro{
+    text-align: center;
+}
+.trainer-img{
+    border-radius: 18px;
+    width: fit-content;
+    height: 272px;
+    position: relative;
+}
+.name{
+    padding-bottom: 3px;
+    margin: 0;
+}
+.designation{
+    padding-bottom: 60px;
+    margin: 0;
+}
+.image-container{
+    border-radius: 18px;
+    background-color: rgb(34, 34, 34);
+    height: 604px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* mobile device responsive */
+@media screen and (max-width: 576px) {
+    /* header section */
+    .nav-items{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    nav{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+   .width-container{
+        width: 90%;
+   }
+   .hero-section{
+        flex-direction: column;
+        gap: 48px;
+   }
+   .banner-title{
+        font-size: 2.25rem;
+        line-height: 40px;
+    }
+    .shape-txt{
+        font-size: 4rem;
+    }
+    .club{
+        display: none;
+    }
+    .join-club-btn{
+        padding: 16px 40px;
+    }
+    .download-btn{
+        padding: 16px 20px;
+    }
+    .tp-box-1{
+        border-radius: 9px;
+        width: 155px;
+        height: 72px;
+        backdrop-filter: blur(15px);
+        top: 45%;
+        right: 55%;
+    }
+    .circle{
+        width: 30px;
+        height: 30px;
+    }
+    .tp-box-1 h3{
+        font-size: 1.12rem;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+    .tp-box-1 p{
+        font-size: 0.75rem;
+        padding-bottom: 14px;
+    }
+    .tp-box-2{
+        border-radius: 9px;
+        width: 145px;
+        height: 74px;
+        backdrop-filter: blur(15px);
+        top: 8%;
+        left: 55%;
+    }
+    .tp-box-2 h3{
+        font-size: 1.87rem;
+        padding-top: 12px;
+        padding-bottom: 3px;
+    }
+    .tp-box-2 p{
+        font-size: 0.6rem;
+        padding-bottom: 11px;
+    }
+
+    /* habit section */
+    .habit-section{
+        margin-top: 0;
+    }
+    .habit-title-header{
+        font-size: 2rem;
+    }
+    .habit-cards{
+        flex-direction: column;
+        gap: 40px;
+    }
+    /* run extra miles */
+    .run-section{
+        flex-direction: column;
+    }
+    .run-easily{
+        padding: 30px 33px;
+    }
+    .run-title{
+        width: 287px;
+        font-size: 2rem;
+    }
+    .run-title-p{
+        width: 287px;
+        padding-bottom: 24px;
+    }
+    .join-now-btn{
+        width: 100%;
+        border-radius: 42px;
+        padding: 16px 103px;
+    }
+    .run-img{
+        padding: 30px 33px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .run-img img{
+        max-width: 80%;
+        object-fit: cover;
+    }
+}
