@@ -403,12 +403,20 @@ nav{
 
 
 /* team section */
-.team-intro{
+.meet-team{
     text-align: center;
+    padding: 88px 195px 58px 195px;
+}
+.team-title{
+    padding-bottom: 14px;
+}
+.team-title-p{
+
 }
 .trainer-img{
     border-radius: 18px;
-    width: fit-content;
+    object-fit: contain;
+    width: 326px;
     height: 272px;
     position: relative;
 }
@@ -427,6 +435,50 @@ nav{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+}
+
+/* footer section */
+.footer-info{
+    padding-top: 65px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:100px 152px;
+}
+.footer-brand h1{
+    font-size: 4.37rem;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+.brand-p{
+    width: 443px;
+}
+footer h4{
+    font-size: 2rem;
+    color: #FFFFFF;
+    padding-bottom: 39px;
+}
+footer a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.43rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+footer p{
+    padding-bottom: 20px;
+}
+.hr{
+    /* color: rgba(255, 255, 255, 0.5); */
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.copyright{
+    font-size: 1.25rem;
+    font-style: 400;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 /* mobile device responsive */
