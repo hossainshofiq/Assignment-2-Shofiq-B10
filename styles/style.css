@@ -415,35 +415,73 @@ nav{
 }
 .trainer-img{
     border-radius: 18px;
-    object-fit: contain;
-    width: 326px;
     height: 272px;
-    position: relative;
+    width: 326px;
+    object-fit: cover;
+    /* position: relative; */
+    /* background-image: rgba(0, 0, 0, 0.2); */
+    /* background-image: linear-gradient(180.00deg rgba(0, 0, 0, 0.2)); */
+    /* background: rgba(0, 0, 0, 0.2); */
+}
+.background-color{
+    /* background-image: linear-gradient(
+     180deg,
+     rgba(0, 0, 0, 0.2) 0%,
+     rgba(0, 0, 0, 0) 100%), url(../images/trainer1.png); */
 }
 .name{
+    padding-left: 19px;
     padding-bottom: 3px;
-    margin: 0;
 }
 .designation{
-    padding-bottom: 60px;
-    margin: 0;
+    padding-left: 19px;
+    padding-bottom: 16px;
 }
 .image-container{
     border-radius: 18px;
     background-color: rgb(34, 34, 34);
     height: 604px;
+    padding: 20px 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+.image-container img{
+    filter: brightness(70%);
+}
+/* .row-1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.row-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+} */
+.name{
+    position: absolute;
+    transform: translate(5%, -240%);
+}
+.designation{
+    position: absolute;
+    transform: translate(15%, -110%);
+}
 
 /* footer section */
+footer{
+    background-color: rgba(255, 255, 255, 0.1);
+}
 .footer-info{
     padding-top: 65px;
     padding-bottom: 80px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:100px 152px;
+}
+.footer-brand{
+    width: 443px;
+    padding-right: 102px;
 }
 .footer-brand h1{
     font-size: 4.37rem;
@@ -470,7 +508,7 @@ footer p{
 }
 .hr{
     /* color: rgba(255, 255, 255, 0.5); */
-    background-color: rgba(255, 255, 255, 0.1);
+    /* background-color: rgba(255, 255, 255, 0.1); */
 }
 .copyright{
     font-size: 1.25rem;
@@ -560,6 +598,7 @@ footer p{
     /* habit section */
     .habit-section{
         margin-top: 0;
+        margin-bottom: 66px;
     }
     .habit-title-header{
         font-size: 2rem;
@@ -639,5 +678,30 @@ footer p{
     }
     input{
         width: 80%;
+    }
+
+    /* footer */
+    .footer-info{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding-bottom: 72px;
+    }
+    .footer-brand{
+        padding-right: 0px;
+    }
+    .footer-brand h1{
+        padding-bottom: 20px;
+        width: 312px;
+    }
+    .brand-p{
+        /* width: 317px; */
+        height: 96px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .copyright{
+        padding-top: 41px;
+        padding-bottom: 57px;
     }
 }
