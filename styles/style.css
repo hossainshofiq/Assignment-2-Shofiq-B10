@@ -420,7 +420,7 @@ nav{
 
 }
 .trainer-img-container{
-    width: 340px;
+    width: 326px;
     height: 272px;
     position: relative;
 }
@@ -438,7 +438,7 @@ nav{
     background: rgba(255, 255, 255, 0.1);
     padding: 20px 20px;
     margin: 0 auto;
-    width: 1060px;
+    width: 1018px;
     border-radius: 18px;
 }
 .name{
@@ -690,11 +690,11 @@ hr{
     /* meet our team */
     .trainer-images{
         grid-template-columns: repeat(1, 1fr);
-        width: 353px;
+        width: 313px;
         margin-bottom: 66px;
     }
     .trainer-images img{
-        width: 352px;
+        width: 313px;
     }
     .meet-team{
         padding: 66px 42px 37px 42px;
