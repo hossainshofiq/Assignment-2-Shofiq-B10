@@ -233,6 +233,8 @@ nav{
     align-items: center;
     gap: 167px;
 }
+/*  */
+
 
 /* main */
 /* change habit section */
@@ -264,14 +266,13 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+/*  */
 
 /* run section */
 .run-section{
     border-radius: 18px;
     background-color: rgb(34, 34, 34);
     display: flex;
-    /* justify-content: space-between;
-    align-items: center; */
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -308,6 +309,7 @@ nav{
     object-fit: none;
     object-position: 69% 30%;
 }
+/*  */
 
 /* bmi calculator */
 .bmi-container{
@@ -350,7 +352,6 @@ nav{
 .bmi-chart{
     width: 310px;
 }
-
 .calc-title{
     padding-bottom: 14px;
 }
@@ -358,7 +359,7 @@ nav{
     padding-bottom: 34px;
 }
 .calculate-bmi{
-    /* width: 577px; */
+    
 }
 .calculate-bmi-header{
     text-align: left;
@@ -401,7 +402,7 @@ nav{
     text-decoration: none;
     color: #FFFFFF;
 }
-
+/*  */
 
 /* team section */
 .team-section{
@@ -419,7 +420,7 @@ nav{
 
 }
 .trainer-img-container{
-    width: 326px;
+    width: 340px;
     height: 272px;
     position: relative;
 }
@@ -434,36 +435,29 @@ nav{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    background-color: rgb(34, 34, 34);
+    background: rgba(255, 255, 255, 0.1);
     padding: 20px 20px;
     margin: 0 auto;
     width: 1060px;
     border-radius: 18px;
 }
-/* .trainer-img{
-    border-radius: 18px;
-    height: 272px;
-    width: 326px;
-    object-fit: cover;
-} */
-
-/* .name{
+.name{
     padding-left: 19px;
     padding-bottom: 3px;
-} */
-/* .designation{
+}
+.designation{
     padding-left: 19px;
     padding-bottom: 16px;
-} */
-
-/* .name{
+}
+.name{
     position: absolute;
     transform: translate(5%, -240%);
-} */
-/* .designation{
+}
+.designation{
     position: absolute;
     transform: translate(15%, -110%);
-} */
+}
+/*  */
 
 /* footer section */
 footer{
@@ -674,6 +668,22 @@ hr{
     }
     input{
         width: 80%;
+    }
+
+    /* meet our team */
+    .trainer-images{
+        grid-template-columns: repeat(1, 1fr);
+        width: 353px;
+        margin-bottom: 66px;
+    }
+    .trainer-images img{
+        width: 352px;
+    }
+    .meet-team{
+        padding: 66px 42px 37px 42px;
+    }
+    .team-title{
+        font-size: 2rem;
     }
 
     /* footer */
