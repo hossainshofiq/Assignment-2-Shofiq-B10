@@ -91,7 +91,7 @@
 
         <section class="run-section width-container">
             <div class="run-easily">
-                <h3 class="run-title black-48 white-color">Run an Extra Mile Easily</h3>
+                <h3 class="run-title black-48 white-color">Run an Extra <br>Mile Easily</h3>
                 <p class="run-title-p regular-14 dark-gray-color">We believe fitness should be accessible to everyone,<br> everywhere, regardless of income or access to a gym. With <br>hundreds of professional workouts.</p>
                 <button class="join-now-btn"><a href="">Join Now</a></button>
             </div>
@@ -147,17 +147,17 @@
                                     <input class="input-box" type="number" name="" id="" placeholder="Height/cm">
                                     <input class="input-box" type="number" name="" id="" placeholder="Weight/kg">
                                     <input class="input-box" type="number" name="" id="" placeholder="Age">
-                                    <select class="input-box" name="" id="">
-                                        <option value="">Sex</option>
-                                        <option value="">Male</option>
-                                        <option value="">Female</option>
-                                        <option value="">Others</option>
+                                    <select class="input-box sex" name="" id="sex">
+                                        <option value="sex">Sex</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="others">Others</option>
                                     </select>
-                                    <select class="input-box"  name="" id="activity">
-                                        <option value="">Select an activity factor</option>
-                                        <option value="">Lightly active</option>
-                                        <option value="">Moderately active</option>
-                                        <option value="">Very active</option>
+                                    <select class="input-box activity"  name="" id="activity">
+                                        <option value="select an activity factor">Select an activity factor</option>
+                                        <option value="lightly active">Lightly active</option>
+                                        <option value="moderately active">Moderately active</option>
+                                        <option value="very active">Very active</option>
                                     </select>
                                 </div>
                                 <div class="calculate">
@@ -174,36 +174,36 @@
                 <h3 class="team-title black-48 white-color">Meet Our Team</h3>
                 <p class="team-title-p regular-14 dark-gray-color">We believe fitness should be accessible to everyone, everywhere, regardless of income or <br>access to a gym.</p>
             </div>
-            <div class="image-container">
-                <div>
-                    <img class="trainer-img background-color" src="images/trainer1.png" alt="">
-                    <h5 class="name black-20 white-color">Jerome Bell</h5>
-                    <p class="designation regular-14 dark-gray-color">Trainer</p>
+            <div class="trainer-images">
+                <div class="trainer-img-container">
+                    <img src="images/trainer1.png" alt="">
+                    <!-- <h5 class="name black-20 white-color">Jerome Bell</h5>
+                    <p class="designation regular-14 dark-gray-color">Trainer</p> -->
                 </div>    
-                <div>
+                <div class="trainer-img-container">
                     <img class="trainer-img" src="images/trainer2.png" alt="">
-                    <h5 class="black-20 white-color name">Cameron Williamson</h5>
-                    <p class="regular-14 dark-gray-color designation">Trainer</p>
+                    <!-- <h5 class="black-20 white-color name">Cameron Williamson</h5>
+                    <p class="regular-14 dark-gray-color designation">Trainer</p> -->
                 </div>
-                <div>
+                <div class="trainer-img-container">
                     <img class="trainer-img background-color" src="images/trainer3.png" alt="">
-                    <h5 class="black-20 white-color name">Darrell Steward</h5>
-                    <p class="regular-14 dark-gray-color designation">Trainer</p>
+                    <!-- <h5 class="black-20 white-color name">Darrell Steward</h5>
+                    <p class="regular-14 dark-gray-color designation">Trainer</p> -->
                 </div>
-                <div>
+                <div class="trainer-img-container">
                     <img class="trainer-img" src="images/trainer4.png" alt="">
-                    <h5 class="black-20 white-color">Dianne Russell</h5>
-                    <p class="regular-14 dark-gray-color designation">Trainer</p>
+                    <!-- <h5 class="black-20 white-color">Dianne Russell</h5>
+                    <p class="regular-14 dark-gray-color designation">Trainer</p> -->
                 </div>
-                <div>
+                <div class="trainer-img-container">
                      <img class="trainer-img" src="images/trainer5.png" alt="">
-                    <h5 class="black-20 white-color name">Cody Fisher</h5>
-                    <p class="regular-14 dark-gray-color designation">Trainer</p>
+                    <!-- <h5 class="black-20 white-color name">Cody Fisher</h5>
+                    <p class="regular-14 dark-gray-color designation">Trainer</p> -->
                 </div>
-                <div>
+                <div class="trainer-img-container">
                     <img class="trainer-img" src="images/trainer6.png" alt="">
-                    <h5 class="black-20 white-color name">Theresa Webb</h5>
-                    <p class="regular-14 dark-gray-color designation">Trainer</p>
+                    <!-- <h5 class="black-20 white-color name">Theresa Webb</h5>
+                    <p class="regular-14 dark-gray-color designation">Trainer</p> -->
                 </div>
                 <div class="row-1">
                     
@@ -216,30 +216,32 @@
     </main>
 
     <footer>
-        <div class="footer-info width-container">
-            <div class="footer-brand">
-                <h1 class="orange-color">Fitness</h1>
-                <h5 class="brand-p regular-14 dark-gray-color">We believe fitness should be accessible to everyone, <br>everywhere, regardless of income or access to a gym. With <br>hundreds of professional workouts.</h5>
+        <div class="footer-container width-container ">
+            <div class="footer-info">
+                <div class="footer-brand-column">
+                    <h1 class="orange-color">Fitness</h1>
+                    <h5 class="regular-14 dark-gray-color">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</h5>
+                </div>
+                <div class="get-started-column pad">
+                    <h4>Get Started</h4>
+                    <p><a href="">Service</a></p>
+                    <p><a href="">Contact Us</a></p>
+                    <p><a href="">Affiliate Program</a></p>
+                    <p><a href="">About Us</a></p>
+                </div>
+                <div class="get-started-column">
+                    <h4>Get Started</h4>
+                    <p><a href="">Fitness</a></p>
+                    <p><a href="">Platform</a></p>
+                    <p><a href="">Workout Library</a></p>
+                    <p><a href="">App Design</a></p>
+                </div>
             </div>
-            <div>
-                <h4>Get Started</h4>
-                <p><a href="">Service</a></p>
-                <p><a href="">Contact Us</a></p>
-                <p><a href="">Affiliate Program</a></p>
-                <p><a href="">About Us</a></p>
-            </div>
-            <div>
-                <h4>Get Started</h4>
-                <p><a href="">Fitness</a></p>
-                <p><a href="">Platform</a></p>
-                <p><a href="">Workout Library</a></p>
-                <p><a href="">App Design</a></p>
-            </div>
+            
+            <hr>
+            <p class="copyright">All right reserved @Fitness 2024</p>
         </div>
         
-        <hr class="hr width-container">
-
-        <p class="copyright width-container">All right reserved @Fitness 2024</p>
     </footer>
 </body>
 </html>

@@ -270,13 +270,13 @@ nav{
     border-radius: 18px;
     background-color: rgb(34, 34, 34);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between;
+    align-items: center; */
     margin-top: 100px;
     margin-bottom: 100px;
 }
 .run-easily{
-    padding: 40px 165px 40px 55px;
+    padding: 40px 55px;
 }
 .run-title{
     padding-bottom: 14px;
@@ -299,14 +299,14 @@ nav{
     color: #FFFFFF;
 }
 .run-img{
-    padding: 30px 32px 30px 0px;
+    padding: 30px 32px;
     width: 100%;
 }
 .run-img img{
     max-width: 100%;
     border-radius: 18px;
     object-fit: none;
-    object-position: 70% 28%;
+    object-position: 69% 30%;
 }
 
 /* bmi calculator */
@@ -361,16 +361,13 @@ nav{
     /* width: 577px; */
 }
 .calculate-bmi-header{
-
+    text-align: left;
 }
 .bmi-input-form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
     gap: 12px;
-}
-.bmi-input-form option{
-    background-color: rgba(255, 255, 255, 0.1);
 }
 .input-box{
     font-size: 1rem;
@@ -379,6 +376,10 @@ nav{
     border-style: none;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+}
+.input-box option{
+    background-color: black;
     color: rgba(255, 255, 255, 0.6);
 }
 #activity{
@@ -403,9 +404,13 @@ nav{
 
 
 /* team section */
+.team-section{
+    margin-top: 88px;
+    margin-bottom: 88px;
+}
 .meet-team{
     text-align: center;
-    padding: 88px 195px 58px 195px;
+    padding-bottom: 58px;
 }
 .team-title{
     padding-bottom: 14px;
@@ -413,60 +418,52 @@ nav{
 .team-title-p{
 
 }
-.trainer-img{
+.trainer-img-container{
+    width: 326px;
+    height: 272px;
+    position: relative;
+}
+.trainer-img-container img{
+    border-radius: 18px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+.trainer-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: rgb(34, 34, 34);
+    padding: 20px 20px;
+    margin: 0 auto;
+    width: 1060px;
+    border-radius: 18px;
+}
+/* .trainer-img{
     border-radius: 18px;
     height: 272px;
     width: 326px;
     object-fit: cover;
-    /* position: relative; */
-    /* background-image: rgba(0, 0, 0, 0.2); */
-    /* background-image: linear-gradient(180.00deg rgba(0, 0, 0, 0.2)); */
-    /* background: rgba(0, 0, 0, 0.2); */
-}
-.background-color{
-    /* background-image: linear-gradient(
-     180deg,
-     rgba(0, 0, 0, 0.2) 0%,
-     rgba(0, 0, 0, 0) 100%), url(../images/trainer1.png); */
-}
-.name{
+} */
+
+/* .name{
     padding-left: 19px;
     padding-bottom: 3px;
-}
-.designation{
+} */
+/* .designation{
     padding-left: 19px;
     padding-bottom: 16px;
-}
-.image-container{
-    border-radius: 18px;
-    background-color: rgb(34, 34, 34);
-    height: 604px;
-    padding: 20px 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-.image-container img{
-    filter: brightness(70%);
-}
-/* .row-1{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-.row-2{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
 } */
-.name{
+
+/* .name{
     position: absolute;
     transform: translate(5%, -240%);
-}
-.designation{
+} */
+/* .designation{
     position: absolute;
     transform: translate(15%, -110%);
-}
+} */
 
 /* footer section */
 footer{
@@ -475,44 +472,43 @@ footer{
 .footer-info{
     padding-top: 65px;
     padding-bottom: 80px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:100px 152px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.footer-brand{
+.footer-brand-column{
     width: 443px;
     padding-right: 102px;
 }
-.footer-brand h1{
+.footer-brand-column h1{
     font-size: 4.37rem;
     font-style: italic;
     padding-bottom: 20px;
 }
-.brand-p{
-    width: 443px;
+.footer-brand-column h5{
+    letter-spacing: 0.3px;
+    line-height: 1.5rem;
 }
 footer h4{
     font-size: 2rem;
     color: #FFFFFF;
     padding-bottom: 39px;
 }
+.get-started-column p{
+    margin-bottom: 20px;
+}
 footer a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.43rem;
     font-weight: 400;
-    padding-bottom: 20px;
 }
-footer p{
-    padding-bottom: 20px;
-}
-.hr{
-    /* color: rgba(255, 255, 255, 0.5); */
-    /* background-color: rgba(255, 255, 255, 0.1); */
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .copyright{
     font-size: 1.25rem;
-    font-style: 400;
+    font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
     padding-top: 35px;
@@ -682,24 +678,26 @@ footer p{
 
     /* footer */
     .footer-info{
-        grid-template-columns: repeat(1, 1fr);
-        gap: 30px;
+        flex-direction: column;
+        padding-top: 44px;
         padding-bottom: 72px;
     }
-    .footer-brand{
+    .footer-brand-column{
         padding-right: 0px;
+    }
+    .footer-brand-column, .get-started-column{
+        width: 90%;
     }
     .footer-brand h1{
         padding-bottom: 20px;
-        width: 312px;
     }
-    .brand-p{
-        /* width: 317px; */
-        height: 96px;
-        margin: 0;
-        padding: 0;
+    .footer-brand-column h5{
+        width: 317px;
+        padding-bottom: 30px;
     }
-
+    .pad{
+        padding-bottom: 20px;
+    }
     .copyright{
         padding-top: 41px;
         padding-bottom: 57px;
