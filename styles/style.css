@@ -468,11 +468,16 @@ nav{
     padding-bottom: 15px;
 }
 .video{
-    padding-left: 105px;
-    padding-right: 105px;
-    
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 20px;
+    margin: 0 auto;
+    width: 1018px;
+    border-radius: 10px; 
 }
-
+.video video{
+    width: 1020px;
+    border-radius: 18px;
+}
 .my-section{
     padding-bottom: 60px;
 }
@@ -705,22 +710,22 @@ hr{
 
     /* my section */
     .header{
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
     .header h1{
         font-size: 2rem;
-
     }
     .my-section{
         width: 313px;
+        padding-bottom: 50px;
     }
     .video{
-        padding-left: 10px;
-        padding-right: 10px;
+        width: 90%;
+        padding: 10px 10px;
     }
     .video video{
-        width: 300px;
-        height: 200px;
+        width: 280px;
+        height: 180x;
     }
 
     /* footer */
