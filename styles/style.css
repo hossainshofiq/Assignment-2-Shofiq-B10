@@ -460,6 +460,7 @@ nav{
 /*  */
 
 /* extra section made by me */
+/* my section */
 .header{
     text-align: center;
     padding-bottom: 60px;
@@ -481,6 +482,59 @@ nav{
 .my-section{
     padding-bottom: 60px;
 }
+/*  */
+
+/* membership section */
+.membership-heading{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.membership{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.membership h2{
+    padding-bottom: 10px;
+}
+.membership-container li{
+    list-style: none;
+    color: rgba(255, 255, 255, 0.5);;
+}
+.membership-container a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.membership-container h3, li{
+    padding-bottom: 5px;
+}
+.membership-container h4{
+    padding-bottom: 30px;
+}
+.dollar{
+    font-size: 2.5rem;
+    color: #E6533C;
+}
+.select-btn{
+    border: 1px solid #E6533C;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 18px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.card{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 20px;
+    border-radius: 18px;
+}
+.membership-container{
+    display: flex;
+    justify-content: space-between;
+}
+/*  */
+
 /* footer section */
 footer{
     background-color: rgba(255, 255, 255, 0.1);
@@ -530,6 +584,7 @@ hr{
     padding-top: 35px;
     padding-bottom: 35px;
 }
+/*  */
 
 /* Responsive for Mobile Devices */
 @media screen and (max-width: 576px) {
@@ -726,6 +781,12 @@ hr{
     .video video{
         width: 280px;
         height: 180x;
+    }
+
+    /* membership section */
+    .membership-container{
+        flex-direction: column;
+        gap: 20px;
     }
 
     /* footer */
