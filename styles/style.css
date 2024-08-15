@@ -276,11 +276,13 @@ nav{
     border-radius: 18px;
     background-color: rgb(34, 34, 34);
     display: flex;
+    align-items: center;
+    gap: 165px;
     margin-top: 100px;
     margin-bottom: 100px;
 }
 .run-easily{
-    padding: 40px 55px;
+    padding-left: 55px;
 }
 .run-title{
     padding-bottom: 14px;
@@ -303,14 +305,13 @@ nav{
     color: #FFFFFF;
 }
 .run-img{
-    padding: 30px 32px;
-    width: 100%;
+    padding: 30px 30px 30px 0px;
 }
 .run-img img{
-    max-width: 100%;
+    width: 100%;
     border-radius: 18px;
     object-fit: none;
-    object-position: 69% 30%;
+    object-position: 75% 25%;
 }
 /*  */
 
@@ -353,7 +354,7 @@ nav{
     color: #FFFFFF;
 }
 .bmi-chart{
-    width: 310px;
+
 }
 .calc-title{
     padding-bottom: 14px;
@@ -682,6 +683,7 @@ hr{
     /* run extra miles */
     .run-section{
         flex-direction: column;
+        gap: 30px;
     }
     .run-easily{
         padding: 30px 33px;
@@ -712,7 +714,6 @@ hr{
     /* bmi calculator */
     .bmi-title{
         font-size: 2rem;
-
     }
     .bmi-title-p{
         width: 353px;
@@ -731,7 +732,7 @@ hr{
     }
     .bmi-box{
         flex-direction: column;
-        gap: 62px;
+        gap: 42px;
         padding-top: 34px;
         padding-bottom: 43px;
     }
@@ -745,7 +746,7 @@ hr{
         
     }
     .calculate-bmi form{
-
+        
     }
     input{
         width: 80%;
@@ -765,6 +766,13 @@ hr{
     }
     .team-title{
         font-size: 2rem;
+    }
+    .cameron{
+        width: 155px;
+        height: 24px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     /* my section */
