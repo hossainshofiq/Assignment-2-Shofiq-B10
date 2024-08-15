@@ -533,6 +533,7 @@ nav{
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px 20px;
     border-radius: 18px;
+    width: 300px;
 }
 .membership-container{
     display: flex;
@@ -793,7 +794,7 @@ hr{
     /* membership section */
     .membership-container{
         flex-direction: column;
-        gap: 20px;
+        gap: 25px;
     }
     .membership-container li{
         padding-bottom: 8px;
@@ -813,9 +814,12 @@ hr{
     }
     .select-btn{
         padding: 15px 30px;
-        border-radius: 24px;
+        border-radius: 50px;
         font-size: 1rem;
         font-weight: 900;
+    }
+    .card{
+        width: 90%;
     }
 
     /* footer */
