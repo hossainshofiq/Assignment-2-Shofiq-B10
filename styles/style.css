@@ -475,11 +475,11 @@ nav{
     background: rgba(255, 255, 255, 0.1);
     padding: 20px 20px;
     margin: 0 auto;
-    width: 1018px;
+    width: 90%;
     border-radius: 10px; 
 }
 .video video{
-    width: 1020px;
+    width: 100%;
     border-radius: 18px;
 }
 /*  */
@@ -773,10 +773,6 @@ hr{
     }
     .header h1{
         font-size: 2rem;
-    }
-    .my-section{
-        width: 100%;
-        padding-bottom: 40px;
     }
     .video{
         width: 90%;
