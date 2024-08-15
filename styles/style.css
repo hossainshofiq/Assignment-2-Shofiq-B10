@@ -185,6 +185,9 @@ nav{
     height: 40px;
     border-radius: 50%;
     background-color: #E6533C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .tp-box-1 h3{
     font-size: 1.5rem;
@@ -479,14 +482,12 @@ nav{
     width: 1020px;
     border-radius: 18px;
 }
-.my-section{
-    padding-bottom: 60px;
-}
 /*  */
 
 /* membership section */
 .membership-heading{
     text-align: center;
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 .membership{
